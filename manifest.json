@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "ILIAS Vokabeltrainer Shortcuts",
+    "version": "1.1",
+
+    "description": "Add keyboard shortcuts to ILIAS Vokabeltrainer.",
+
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+              "https://www.studon.fau.de/*"
+            ],
+            "js": ["shortcuts.js"]
+        }
+    ]
+}
